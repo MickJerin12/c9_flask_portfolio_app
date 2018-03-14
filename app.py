@@ -93,3 +93,7 @@ def blog_page():
 
 if __name__ == '__main__':
 	app.run(debug=True)
+@app.route('/#page-top', methods=['GET'])
+def home_page():
+	return render_template('index.html')
+
