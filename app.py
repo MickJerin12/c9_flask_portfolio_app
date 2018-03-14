@@ -90,9 +90,13 @@ def python_apps_page():
 def blog_page():
   return render_template('blog.html')
 
+@app.route('/#page-top', methods=['GET'])
+def home_page1():
+  return render_template('index.html')
+
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
-@app.route('/#page-top', methods=['GET'])
-	return render_template('index.html')
+
 
