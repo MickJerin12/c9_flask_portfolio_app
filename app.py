@@ -54,7 +54,7 @@ def shopping_list_post():
 
               
               
-              return render_template('shopping_list.html', result=join([str(item) for item in shop_list]))
+            return render_template('shopping_list.html', result="\n".join([str(item) for item in shop_list]))
           except ValueError:
             return "Easy now! Let's keep it simple! Just words with a space between them"
           
